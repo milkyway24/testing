@@ -1,0 +1,138 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--gray-light);
+  background-color: var(--dark-black);
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  max-width: 262px;
+  margin-right: 6%;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: flex-start;
+  width: 224px;
+  min-height: 72px;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+  line-height: 36px;
+}
+
+.footer__nav-link {
+  outline: none;
+  transition: color var(--short);
+}
+
+.footer__nav-link:focus:not(:hover):not(:active) {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.footer__nav-link:active {
+  color: var(--orange-dark);
+}
+
+.footer__feedback {
+  width: calc(570 / 1770 * 100%);
+}
+
+.footer__about {
+  width: calc(363 / 1770 * 100%);
+  padding-top: 87px;
+}
+
+@media (max-width: 1440px) {
+  .footer__container {
+    justify-content: flex-start;
+  }
+
+  .footer__nav {
+    margin-right: calc(128 / 924 * 100%);
+  }
+
+  .footer__feedback {
+    width: calc(541 / 924 * 100%);
+  }
+
+  .footer__about {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__nav {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 962px) {
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .footer__nav {
+    margin-right: 0;
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__feedback {
+    width: 100%;
+    max-width: 541px;
+    margin-bottom: 47px;
+  }
+
+  .footer__logo {
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-top: 32px;
+  }
+
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__logo {
+    width: 131px;
+    min-height: 42px;
+  }
+
+  .footer__nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__feedback {
+    margin-bottom: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gray-dark);
+  }
+}
+
+@media (any-hover: hover) {
+  .footer__nav-link:hover:not(:active) {
+    color: var(--orange);
+  }
+}

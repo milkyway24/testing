@@ -1,0 +1,9 @@
+.how__title {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .how__title {
+    margin-bottom: 20px;
+  }
+}
